@@ -56,7 +56,7 @@
                                                         <div class="header-ctn">
                                                                 <div class="container">
                                                                 <ul class="header-links pull-right">                
-                                                                <li><a href="index.html"><i class="fa fa-user-o"></i>Iniciar Sesión</a></li>
+                                                                <li><a href="index.jsp"><i class="fa fa-user-o"></i>Iniciar Sesión</a></li>
                                                                 <li><a href="rGeneral.jsp"><i class="fa fa-check"></i>Registrarme</a></li>
                                                                 </ul>
 
@@ -149,7 +149,7 @@
                             <td><%=rs.getString("usuario")%></td>
                             <td><%=rs.getString("password")%></td>
                             
-                            <td><a class="btn btn-primary" href="eliminar.jsp?id_usuario=<%=rs.getString("id_usuario")%>">Eliminar</a></td>
+                            <td><a class="btn btn-danger" href="eliminar.jsp?id_usuario=<%=rs.getString("id_usuario")%>">Eliminar</a></td>
                             <td><a class="btn btn-info" href="editarAlumno.jsp?id_usuario=<%= rs.getString(1)%>&usuario=<%= rs.getString(2)%>&password=<%= rs.getString(3)%>">Editar</a></td>
                         </tr>
                         <%
